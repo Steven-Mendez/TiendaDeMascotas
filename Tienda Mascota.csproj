@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Tienda_Mascota</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Vista\Resource1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Vista\Resource1.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Banners.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Banners.resx</DependentUpon>
+    </Compile>
+    <Compile Update="FotosDePerfil.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FotosDePerfil.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Iconos.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Iconos.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Imagenes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Imagenes.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Banners.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Banners.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FotosDePerfil.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FotosDePerfil.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Iconos.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Iconos.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Imagenes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Imagenes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
