@@ -13,7 +13,8 @@ Proyecto Final Desarrollo de Aplicaciones con C# y SQL Server
 	use master
 	create login ProductoMascotas with password = '123'
 	go
-	use MiEmpresago
+	use MiEmpresa
+	go
 	exec sp_adduser ProductoMascotas, administrador
 	exec sp_addrolemember db_owner, administrador
 	
