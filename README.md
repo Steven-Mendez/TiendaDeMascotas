@@ -21,7 +21,7 @@ Proyecto Final Desarrollo de Aplicaciones con C# y SQL Server
 
 ### 👷‍♂️ Usuarios del Sistema
 	Usuario: admin
-	Contraseña: 123
+	Contraseña: admin
 	
 	Usuario: cajero
 	Contraseña: cajero
