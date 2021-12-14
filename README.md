@@ -1,5 +1,5 @@
 # 🐹 TiendaDeMascotas
-Proyecto Final Desarrollo de Aplicaciones con C# y SQL Server
+Proyecto Final "Desarrollo de Aplicaciones con C# y SQL Server".
 
 ## 👨‍🎓 Datos Estudiante
 - Nombre: Steven Alexander Mendez Paiz
